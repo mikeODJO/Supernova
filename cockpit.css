@@ -1,0 +1,338 @@
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: Verdana, sans-serif;
+}
+
+body{
+	font-size: 1.6rem;
+	margin:0;
+	color: #c5cad5;
+}
+
+:root{
+	--white:#fbfbfe;
+	--grey-nav:#c5cad5;
+	--grey-font:#72849c;
+	--blue-nav:#082645;
+	--blue-nav-call:#bdcdf6;
+	--blue:#1c73f4;
+	--blue-font:;
+}
+
+/*header*/
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.navbar1{
+	background-color:#082645; 
+	padding: 32px 0px;
+	position: relative;
+}
+
+.logo_n_icon{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+
+.navbar1-logo{
+	color: #fbfbfe;
+	font-size: 2.5rem;
+}
+
+.navbar1_2 .aide{
+	padding: 0 1rem;
+	color: #c5cad5;
+	text-decoration: none;
+}
+
+.navbar1_2{
+	height:100%;
+	display:inherit;
+	flex-direction: inherit;
+	align-items: center;
+	gap:2rem;
+	position: absolute;
+	right: 0;
+}
+
+.forfait{
+	font-size: 1.3rem;
+}
+
+.forfait a{
+	color:#c5cad5;
+}
+
+.call{
+	background-color: #bdcdf6;
+	color: #1c73f4;
+	padding: 5px;
+	border-radius: 5px; 
+}
+
+.navbar2{
+	position: relative;
+	letter-spacing: -0.1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	gap:50px;
+	background-color: rgb(240,240,240);
+	color: rgb(0,0,120);
+	border-bottom:1px solid;
+}
+
+.annuel-mensuel{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid;
+	border-radius: 20px;
+}
+
+.annuel-mensuel div{
+	margin-left: 0;
+	padding: 5px;
+}
+
+.mensuel{
+	background-color: #082645;
+	border-radius: 0 20px 20px 0;
+	color: white;
+}
+
+.navbar2_2 {
+	position: absolute;
+	right: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:40px;
+}
+
+.icon1{
+	display: none;
+}
+
+.icon2{
+	display: none;
+}
+
+.icon3{
+	display: none;
+}
+
+.navbar2_2 a{
+	text-decoration: none;
+	color: rgb(0,0,120);;
+}
+
+.carotte{
+	font-size: 2rem;
+
+}
+
+.empty{
+	background-color: rgb(240,240,240);
+	height: 20px;
+}
+
+/*main*/
+.section1{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+aside{
+	font-size: 1.6rem;
+	background-color: rgb(240,240,240);
+	width: 250px;
+	padding: 5px
+}
+
+.title{
+	display: block;
+	padding:5px 0;
+	border-bottom: 1px solid rgb(150,150,150);
+	margin-top: 10px;
+}
+
+.item{
+ 	padding: 5px 0;
+}
+
+.item a{
+	text-decoration: none;
+	color: rgb(0,0,120);
+}
+
+.section1_2{
+	padding: 35px;
+}
+
+.section1_2_title{
+	font-size:2rem; 
+}
+
+.section1_2_body{
+	margin: 20px;
+	padding: 15px;
+	border: 0.5px solid;
+}
+
+.section1_2_body span{
+	display: inline-block;
+}
+
+.intro{
+	display: flex;
+	justify-content: space-between;
+	color: rgb(0,0,120);
+	font-size: 2rem;
+}
+
+.text{
+	margin-top: 40px;
+}
+
+.sect12_bd_itm{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap:20px;
+}
+
+.sect12_bd_itm span{
+	display: inline-block;
+	padding: 5px 40px;
+	border: 1px solid blue;
+	border-radius: 5px;
+}
+
+.sect12_bd_itms{
+	display: flex;
+	flex-direction: column;
+	gap:50px;
+
+}
+
+.vente_depenses{
+	margin-left: 20px;
+}
+
+.marge_rapport{
+	margin-right: 20
+
+}
+
+
+/*responsive*/
+@media(max-width:1050px){
+	.navbar2{
+		display: none;
+	}
+
+	.icon1{
+		display: initial;
+		margin-left:10px;
+	}
+
+	.navbar2.resp-navbar2{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:10px;
+		padding-top: 10px;
+		padding-bottom:10px;
+	}
+
+	.navbar2_2.resp-navbar2{
+		position: static;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:10px;
+	}
+}
+
+
+@media(max-width: 900px){
+	.sidebar{
+		display: none;
+	}
+
+	.icon2{
+		display: initial;
+	}
+
+	.sidebar.resp-sidebar{
+		display: initial;
+		position: absolute;
+		left: 0;
+		z-index: 1;
+		height: 100%;
+		box-shadow:rgba(0,0,0,0.35) 2px 0px 15px;
+	}
+
+	.section1.resp-sidebar{
+		position: relative;
+	}
+
+	.section1_2.resp-sidebar{
+		position: absolute;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+@media(max-width:640px){
+
+	.navbar1_2{
+		display: none;
+	}
+
+	.navbar1.resp-navbar1{
+		flex-direction: column;
+		position: initial;
+		align-items: flex-start;
+	}
+
+	.navbar1_2.resp-navbar1{
+		position: initial;
+		display: initial;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.navbar1_2.resp-navbar1 a{
+		display: inline-block;
+	}
+
+	.navbar1_2.resp-navbar1 *{
+		margin-top: 20px;
+	}
+
+	.icons{
+		position: absolute;
+		right: 10px;
+	}
+
+	.icon3{
+		display: initial;
+	}
+}
